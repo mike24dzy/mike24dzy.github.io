@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Web App</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body onload="renderTime();">
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search weather for a city in the world..." />
+    </header>
+    <div class="instruction">Check weather by entering the <span style="color:aquamarine">correct 'city name, country code'</span> (Searching by States only available for US locations)</div> 
+    <main>
+      <section class="location">
+        <div id= "clock" class="date"></div>
+        <div class="city">Mountain View, CA</div>
+      </section>
+      <div class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">13°c / 16°c</div>
+      </div>
+      <section class="introduction">
+        <div class="quote">Wherever you go, no matter what weather, <span style="color:khaki">always bring your own sunshine.</span></div>
+      </section>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
